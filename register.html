@@ -31,28 +31,70 @@
     </nav>
     <div class="container-fluid p-0">
         <div class="bg-header-login px-2">
-            <div class="page-title font-weight-bold">Masuk ke Akun Ensure Kamu</div>
+            <div class="page-title">Daftar di Ensure</div>
+            <p>Dapatkan banyak informasi menarik dan banyak keuntungan di Ensure</p>
             <div class="banner-container">
                 <img src="./assets/img/Banner.png" alt="banner.png">
             </div>
         </div>
         <div class="register-section">
-            <div class="register-text"><i class="fa-solid fa-circle-exclamation mr-2 text-primary"></i>Belum Punya Akun?<a href="register.html" class="text-primary font-weight-bold"> Daftar Sekarang</span></a></div>
+            <div class="register-text"><i class="fa-solid fa-circle-exclamation mr-2 text-primary"></i>Sudah punya akun?<a href="login.html" class="text-primary font-weight-bold"> Masuk Sekarang</span></a></div>
         </div>
         <div class="login-form px-3">
             <form action="#">
                 <div class="form-group">
+                    <label for="name" class="font-weight-bold">Nama</label>
+                    <input type="name" name="name" class="form-control" placeholder="Masukkan Nama">
+                </div>
+                <div class="form-group">
                     <label for="email" class="font-weight-bold">Email</label>
-                    <input type="email" name="email" class="form-control" placeholder="Masukkan Email Kamu">
+                    <input type="email" name="email" class="form-control" placeholder="Masukkan Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="font-weight-bold">Nomer Telepon</label>
+                    <div class="d-flex">
+                        <select name="code" id="code" class="form-control w-25 mr-2">
+                            <option value="0" selected>+62</option>
+                            <option value="0">+1</option>
+                        </select>
+                        <input type="phone" name="phone" class="form-control" placeholder="Masukkan Nomer Telepon">
+                    </div>
+                    <small><i class="fa-solid fa-circle-exclamation mr-2 text-primary"></i>Contoh: +628921029300</small>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate" class="font-weight-bold">Tanggal Lahir</label>
+                    <!-- <input type="date" name="birthdate" class="form-control" placeholder=""> -->
+                    <div class="d-flex justify-content-around">
+                        <select name="date" id="date" class="form-control  mr-2">
+                            <option value="0" selected>Tanggal</option>
+                        </select>
+                        <select name="month" id="month" class="form-control mr-2">
+                            <option value="0" selected>Bulan</option>
+                        </select>
+                        <select name="year" id="year" class="form-control mr-2">
+                            <option value="0" selected>Tahun</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="d-inline font-weight-bold">Password</label>
                     <a href="#" class="d-inline float-right font-weight-bold">Lupa Password?</a>
                     <input type="password" name="password" class="form-control" placeholder="Masukkan Password Kamu">
+                    <small><i class="fa-solid fa-circle-exclamation mr-2 text-primary"></i>Password minimal 8 karakter</small>
+                </div>
+                <div class="form-group">
+                    <label for="question" class="d-inline font-weight-bold">Dari mana Anda mengetahui informasi mengenai hal ini?</label>
+                    <select name="answer" id="answer" class="form-control mr-2">
+                        <option value="0" selected>Pilih Jawaban</option>
+                    </select>
                 </div>
                 <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Ingat Saya</label>
+                    <label class="custom-control-label" for="customCheck1">Saya bersedia untuk berlangganan Newsletter</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">Saya setuju dengan <a href="#">Syarat & Ketentuan</a> dan <a href="#">Kebijakan Privasi</a></label>
                 </div>
                 <button class="btn btn-primary btn-block py-2" style="border-radius: 2em;">Login</button>
                 <div class="text-center my-3">

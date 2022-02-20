@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
 body {
 	padding: 0;
 	margin: 0;
+   font-family: 'Nunito', sans-serif;
 }
 
 .page-title {
@@ -61,6 +64,15 @@ body {
 		padding: 22px 11px;
 		border-radius: 8px;
 	}
+
+   select {
+      border: 1px solid #e7e7e7;
+      // padding: 22px 11px;
+      height: 45px;
+      border-radius: 8px;
+      color: #373b44;
+      margin-top: 1px;
+   }
 }
 
 .gradient {
@@ -78,6 +90,8 @@ footer {
 	color: #fff;
 	padding: 0.7em 0.7em 0;
    max-width: 100%;
+   position: absolute;
+   bottom: 0;
 
 	ul {
 		> li {

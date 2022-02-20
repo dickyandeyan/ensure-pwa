@@ -30,46 +30,37 @@
         </div>
     </nav>
     <div class="container-fluid p-0">
-        <div class="bg-header-login px-2">
-            <div class="page-title font-weight-bold">Masuk ke Akun Ensure Kamu</div>
-            <div class="banner-container">
-                <img src="./assets/img/Banner.png" alt="banner.png">
+        <form>
+            <div class="bg-header-login px-2">
+                <div class="login-form ">
+                    <div class="page-title font-weight-bold">Buat Password Baru</div>
+                    <!-- ALERT -->
+                    <!-- <div class="alert alert-success mb-3">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-square-check"></i>
+                            <div>
+                                <h6 class="ml-3 font-weight-bold">
+                                    Link Buat Password Baru Berhasil Terkirim
+                                </h6>
+                                <p class="mb-0 ml-3">Silakan periksa email Anda untuk bisa buat password baru</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- END ALERT -->
+                    <div class="form-group">
+                        <label for="newpassword" class="font-weight-bold">Password Baru</label>
+                        <input type="newpassword" name="newpassword" class="form-control" placeholder="Masukkan Password Kamu">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmpass" class="font-weight-bold">Konfirmasi Password Baru</label>
+                        <input type="confirmpass" name="confirmpass" class="form-control" placeholder="Masukkan Password Kamu">
+                        <!-- ALERT IF FAIL -->
+                        <!-- <small class="text-danger font-weight-bold"><i class="fa-solid fa-circle-exclamation mr-2 text-danger"></i>Konfirmasi password tidak sama</small> -->
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block py-2" style="border-radius: 2em;">Ubah Password</button>
             </div>
-        </div>
-        <div class="register-section">
-            <div class="register-text"><i class="fa-solid fa-circle-exclamation mr-2 text-primary"></i>Belum Punya Akun?<a href="register.html" class="text-primary font-weight-bold"> Daftar Sekarang</span></a></div>
-        </div>
-        <div class="login-form px-3">
-            <form action="#">
-                <div class="form-group">
-                    <label for="email" class="font-weight-bold">Email</label>
-                    <input type="email" name="email" class="form-control" placeholder="Masukkan Email Kamu">
-                </div>
-                <div class="form-group">
-                    <label for="password" class="d-inline font-weight-bold">Password</label>
-                    <a href="#" class="d-inline float-right font-weight-bold">Lupa Password?</a>
-                    <input type="password" name="password" class="form-control" placeholder="Masukkan Password Kamu">
-                </div>
-                <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Ingat Saya</label>
-                </div>
-                <button class="btn btn-primary btn-block py-2" style="border-radius: 2em;">Login</button>
-                <div class="text-center my-3">
-                    <small class="text-muted">
-                        ATAU MASUK DENGAN
-                    </small>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <button type="button" class="btn btn-outline-primary btn-block py-2" style="border-radius: 2em;"><img src="./assets/img/google.png" alt="google" class="mr-2 mb-1">Google</button>
-                    </div>
-                    <div class="col-6">
-                        <button type="button" class="btn btn-outline-primary btn-block py-2" style="border-radius: 2em;"><img src="./assets/img/facebook.png" alt="facebook" class="mr-2 mb-1">Facebook</button>
-                    </div>
-                </div>
-            </form>
-        </div>
+        </form>
     </div>
     <footer class="gradient">
         <div class="container-fluid px-1">
