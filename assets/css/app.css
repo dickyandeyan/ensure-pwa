@@ -3,6 +3,83 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
+  position: relative;
+}
+
+.main-header {
+  min-height: 150px;
+}
+
+.banner-slider {
+  margin-top: -120px;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.banner-slider::-webkit-scrollbar {
+  display: none;
+}
+.banner-slider .banner-container {
+  border-radius: 1em;
+  min-height: 120px;
+  background: #000;
+  width: 343px;
+  height: 200px;
+  margin-right: 1em;
+}
+.banner-slider .banner-container .img-container {
+  position: relative;
+  width: 343px;
+}
+.banner-slider .banner-container .img-container img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.main-menu-section {
+  color: #005493;
+  width: 100%;
+}
+.main-menu-section .col-3 {
+  padding: 0;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+.menu-icon .menu-title {
+  text-align: center;
+  width: 80%;
+  margin-left: 5px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 77px;
+  padding: 1em;
+  margin: 8px;
+  background: linear-gradient(180deg, #f7eddb 0%, rgba(251, 246, 237, 0.5) 100%);
+  border-radius: 24px;
+}
+
+.btn-banner {
+  color: #0080f8;
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 2em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-weight: bold;
 }
 
 .page-title {
@@ -47,6 +124,212 @@ body {
   width: 100%;
 }
 
+.info-for-you h5,
+.product-ensure h5,
+.article-news h5 {
+  color: #005493;
+}
+
+.big-banner-slide {
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.big-banner-slide::-webkit-scrollbar {
+  display: none;
+}
+.big-banner-slide .banner-container {
+  margin-right: 1em;
+}
+.big-banner-slide .banner-container .img-container {
+  width: 343px;
+  height: auto;
+  background: #000;
+  border-radius: 8px;
+}
+.big-banner-slide .banner-container .img-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-ensure .product-card {
+  border-radius: 8px;
+  min-height: 200px;
+  border: 1px solid #f0f0f0;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.product-ensure .img-wrapper {
+  border-radius: 8px;
+  min-height: 200px;
+  border: 1px solid #f0f0f0;
+}
+.product-ensure .img-wrapper img {
+  width: 100%;
+}
+.product-ensure .prod-label {
+  padding: 8px;
+  color: #6e5422;
+  background: #fbf6ed;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.product-ensure .button-group {
+  display: flex;
+}
+.product-ensure .button-group .btn-detail-prod {
+  color: #fff;
+  padding: 8px 24px;
+  background: #0078d1;
+  border-radius: 100px;
+  width: 150px;
+  font-weight: 700;
+}
+.product-ensure .button-group .btn-detail-prod:hover {
+  background-color: #04294b;
+  transition: all 0.4s ease;
+}
+.product-ensure .button-group .btn-cart {
+  color: #0080f8;
+  border: 1px solid #0080f8;
+  border-radius: 100%;
+  padding: 8px 14px;
+}
+.product-ensure .button-group .btn-cart:hover {
+  background-color: #0080f8;
+  transition: all 0.4s ease;
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+
+.article-news .filter-section {
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.article-news .filter-section::-webkit-scrollbar {
+  display: none;
+}
+.article-news .filter-section .filter-pills {
+  padding: 8px;
+  color: #6e5422;
+  background: #fbf6ed;
+  font-weight: 700;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right: 1em;
+}
+.article-news .filter-section .active {
+  background: #6e5422;
+  color: #fff;
+}
+.article-news .article-slider {
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.article-news .article-slider::-webkit-scrollbar {
+  display: none;
+}
+.article-news .article-slider .article-card {
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 1em;
+  margin-right: 1em;
+}
+.article-news .article-slider .article-card .img-wrapper {
+  width: 280px;
+  max-height: 184px;
+}
+.article-news .article-slider .article-card .img-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+}
+.article-news .timestamp {
+  font-size: 12px;
+  font-weight: bold;
+}
+.article-news .label {
+  padding: 8px;
+  color: #6e5422;
+  background: #fbf6ed;
+  font-weight: 700;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.article-news .article-list .list-article-card {
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.article-news .article-list .list-article-card .img-wrapper {
+  width: 130px;
+}
+.article-news .article-list .list-article-card .img-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.ads .img-wrapper {
+  width: auto;
+  position: relative;
+}
+.ads .img-wrapper img {
+  width: 100%;
+}
+.ads .img-wrapper .btn-ads {
+  position: absolute;
+  top: 60%;
+  left: 110px;
+  border-radius: 2em;
+  z-index: 11;
+}
+
+.consult .consult-card {
+  padding: 1em;
+  border-radius: 8px;
+  color: #fff;
+  background: #ba8b02;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #664200, #ba8b02);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.nav-bottom {
+  background: #f5f5f5;
+  min-height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 0.5em 1em;
+  color: #acacac;
+}
+.nav-bottom i {
+  font-size: 20px;
+}
+.nav-bottom .active {
+  color: #0080f8;
+}
+
 .register-section {
   margin: 14px;
   border: 1px solid #0080f8;
@@ -78,9 +361,8 @@ footer {
   color: #fff;
   padding: 0.7em 0.7em 0;
   max-width: 100%;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+  margin-bottom: 80px;
 }
 footer ul > li {
   margin-bottom: 10px;
