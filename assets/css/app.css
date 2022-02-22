@@ -21,6 +21,11 @@ body {
 }
 
 .navbar-content {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   height: 0;
   width: 100%;
   position: fixed;
@@ -31,6 +36,9 @@ body {
   transition: all 0.5s ease-in-out;
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #04294b, #155088);
+}
+.navbar-content::-webkit-scrollbar {
+  display: none;
 }
 .navbar-content #menu-list {
   color: #fff;

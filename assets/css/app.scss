@@ -25,6 +25,12 @@ body {
 }
 
 .navbar-content {
+	overflow-x: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	&::-webkit-scrollbar {
+		display: none;
+	}
 	height: 0;
 	width: 100%;
 	position: fixed;
@@ -93,8 +99,8 @@ body {
 		}
 
 		.prod-label {
-         display: flex;
-         font-size: 12px;
+			display: flex;
+			font-size: 12px;
 			padding: 5px;
 			color: #6e5422;
 			background: #fbf6ed;
@@ -104,22 +110,22 @@ body {
 			width: fit-content;
 		}
 
-      .button-group {
-         .btn-details {
-            border-radius: 2em;
-         }
+		.button-group {
+			.btn-details {
+				border-radius: 2em;
+			}
 
-         .btn-cart {
-            border: 1px solid #fff;
-            color: #fff;
-            border-radius: 2em;
+			.btn-cart {
+				border: 1px solid #fff;
+				color: #fff;
+				border-radius: 2em;
 
-            &:hover {
-               background-color: #fff;
-               color: #005493;
-            }
-         }
-      }
+				&:hover {
+					background-color: #fff;
+					color: #005493;
+				}
+			}
+		}
 	}
 }
 
