@@ -6,6 +6,105 @@ body {
   position: relative;
 }
 
+.navbar {
+  border-top: 1px solid #ffe600;
+}
+.navbar .btn-login {
+  border-radius: 20px;
+}
+.navbar .navbar-toggler {
+  border: #fff;
+}
+.navbar #navbar-icon {
+  font-size: 32px;
+  color: #fff;
+}
+
+.navbar-content {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 2.3em;
+  left: 0;
+  overflow-y: scroll;
+  transition: all 0.5s ease-in-out;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #04294b, #155088);
+}
+.navbar-content #menu-list {
+  color: #fff;
+}
+.navbar-content #menu-list .menu-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #8ca9c4;
+}
+.navbar-content ul > li {
+  font-size: 24px;
+  padding: 0.3em;
+  border-radius: 8px;
+  color: #ebd3a6;
+}
+.navbar-content ul > li i {
+  margin-right: 0.4em;
+}
+.navbar-content ul > li:hover {
+  transition: all 0.4s ease;
+}
+.navbar-content a {
+  text-decoration: none;
+  color: #ebd3a6;
+}
+.navbar-content .img-wrapper {
+  width: 100%;
+}
+.navbar-content .img-wrapper img {
+  width: 100%;
+}
+.navbar-content .product-card {
+  min-height: 150px;
+  background-color: #005493;
+  border-radius: 8px;
+}
+.navbar-content .product-card .img-wrapper-prod {
+  width: auto;
+  border-radius: 8px;
+}
+.navbar-content .product-card .img-wrapper-prod img {
+  width: 100%;
+  border-radius: 8px;
+}
+.navbar-content .product-card .prod-label {
+  display: flex;
+  font-size: 12px;
+  padding: 5px;
+  color: #6e5422;
+  background: #fbf6ed;
+  font-weight: 700;
+  border-radius: 4px;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.navbar-content .product-card .button-group .btn-details {
+  border-radius: 2em;
+}
+.navbar-content .product-card .button-group .btn-cart {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 2em;
+}
+.navbar-content .product-card .button-group .btn-cart:hover {
+  background-color: #fff;
+  color: #005493;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
 .main-header {
   min-height: 150px;
 }
@@ -89,16 +188,6 @@ body {
   text-transform: capitalize;
   color: #23323f;
   margin: 12px 0;
-}
-
-.navbar {
-  border-top: 1px solid #ffe600;
-}
-.navbar .btn-login {
-  border-radius: 20px;
-}
-.navbar .navbar-toggler {
-  border: #fff;
 }
 
 .bg-header {
@@ -317,7 +406,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 2;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   padding: 0.5em 1em;

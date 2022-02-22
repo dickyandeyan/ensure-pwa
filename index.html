@@ -22,13 +22,115 @@
                 </div>
             </a>
         </div>
-        <div>
-            <button class="btn btn-outline-light btn-login mr-2">Masuk</button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <div class="d-flex align-items-center">
+            <button class="btn btn-outline-light btn-login mr-2" id="btn-login">Masuk</button>
+            <button class="navbar-toggler" type="button" onclick="openNav()">
+                <span class="fa-solid fa-bars" id="navbar-icon"></span>
             </button>
         </div>
     </nav>
+    <div class="navbar-content p-3" id="navbarContent">
+        <div class="menu-list d-none" id="menu-list">
+            <div class="row my-3">
+                <div class="col-12 mb-3">
+                    <h6 class="menu-title">Akun Ensure</h6>
+                </div>
+                <div class="col-6 px-2">
+                    <button class="btn btn-outline-light btn-block py-3" style="border-radius: 2em;">Masuk</button>
+                </div>
+                <div class="col-6 px-2">
+                    <button class="btn btn-primary btn-block py-3" style="border-radius: 2em;">Daftar</button>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12 mt-3">
+                    <h6 class="menu-title">Menu Ensure</h6>
+                </div>
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            Beranda
+                        </li>
+                        <li>
+                            <a href="#prods" data-toggle="collapse">
+                                <i class="fa-solid fa-whiskey-glass"></i>
+                                Produk
+                                <i class="fa-solid fa-angle-down ml-1 text-white"></i>
+                            </a>
+                            <ul id="prods" class="list-unstyled collapse">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="product-card p-3">
+                                                <div class="img-wrapper-prod">
+                                                    <img src="./assets/img/ensure.png" alt="ensurew">
+                                                </div>
+                                                <h6 class="mt-2">Ensure Susu Nutrisi Dewasa</h6>
+                                                <div class="label d-flex mt-2">
+                                                    <div class="prod-label mr-2">Vanilla</div>
+                                                    <div class="prod-label">Coklat</div>
+                                                </div>
+                                                <div class="button-group mt-2">
+                                                    <button class="btn btn-light btn-details text-primary font-weight-bold px-3" id="">Lihat</button>
+                                                    <button class="btn btn-cart my-2"><i class="fa-solid fa-bag-shopping m-0"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="product-card p-3">
+                                                <div class="img-wrapper-prod">
+                                                    <img src="./assets/img/ensure.png" alt="ensurew">
+                                                </div>
+                                                <h6 class="mt-2">Ensure Susu Nutrisi Dewasa</h6>
+                                                <div class="label d-flex mt-2">
+                                                    <div class="prod-label mr-2">Vanilla</div>
+                                                    <div class="prod-label">Coklat</div>
+                                                </div>
+                                                <div class="button-group mt-2">
+                                                    <button class="btn btn-light btn-details text-primary font-weight-bold px-3" id="">Lihat</button>
+                                                    <button class="btn btn-cart my-2"><i class="fa-solid fa-bag-shopping m-0"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-newspaper"></i>
+                            Artikel
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-hand-fist"></i>
+                            Fitur Kesehatan
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gift"></i>
+                            Sampel Gratis
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-ticket-simple"></i>
+                            Voucher Alfamart Gratis
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Belanja Sekarang
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            FAQ & Kontak Kami
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 mb-5">
+                    <div class="img-wrapper">
+                        <img src="./assets/img/Banner.png" alt="banner2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid p-0">
         <div class="main-header gradient"></div>
         <div class="banner-slider px-1">
