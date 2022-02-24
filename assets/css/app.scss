@@ -75,7 +75,8 @@ body {
 		color: #ebd3a6;
 	}
 
-	.img-wrapper {
+	.img-wrapper,
+	.banner-wrapper {
 		width: 100%;
 
 		img {
@@ -439,7 +440,7 @@ body {
 			top: 60%;
 			left: 110px;
 			border-radius: 2em;
-			z-index: 11;
+			z-index: 1;
 		}
 	}
 }
@@ -483,6 +484,87 @@ body {
 	.active {
 		color: #0080f8;
 	}
+}
+
+#product-page {
+	.card-age {
+		padding: 1em;
+		border-radius: 1em;
+		border: 1px solid #e7e7e7;
+		margin-bottom: 1em;
+
+		.img-wrapper {
+			width: 100px;
+			flex: 0 0 100px;
+			img {
+				width: 100%;
+			}
+		}
+
+		i {
+			color: #be9c5d;
+		}
+	}
+}
+
+#product-details {
+	#nav-pills-section {
+		.nav-pills {
+			border: 1px solid #badcf7;
+			border-radius: 2em;
+
+			.nav-link {
+				border-radius: 2em;
+				transition: all 0.4s ease;
+			}
+
+			.active {
+				background: #005493;
+				color: #fff;
+			}
+
+			a {
+				color: #005493;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.main-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ececec;
+		border-radius: 1em;
+		height: auto;
+
+		img {
+			width: 100%
+		}
+	}
+
+   .image-preview-column {
+      display: flex;
+      > .thumbnail {
+         margin-right: .4em;
+      }
+
+      .thumbnail {
+         flex: 0 0 50px;
+         min-height: 50px;
+         width: 50px;
+         border-radius: 8px;
+         border: 1px solid #c0c0c0;
+
+         img {
+            width: 100%;
+         }
+      }
+
+      .active {
+         border-color: #005493;
+      }
+   }
 }
 
 // Login CSS
