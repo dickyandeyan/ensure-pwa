@@ -6,6 +6,14 @@ $(document).ready(function () {
 			$('#navbar-fix').addClass('gradient')
 		}
 	})
+
+   
+   $('#prods').on('show.bs.collapse', function () {
+      $('.fa-angle-down').addClass('arrow-down');
+   });
+   $('#prods').on('hide.bs.collapse', function () {
+      $('.fa-angle-down').removeClass('arrow-down');
+   });
 })
 const openNav = () => {
 	$('#navbarContent').toggleClass('h-100')

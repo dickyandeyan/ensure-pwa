@@ -6,6 +6,35 @@ body {
   position: relative;
 }
 
+.g-label {
+  padding: 8px;
+  color: #6e5422;
+  background: #fbf6ed;
+  font-weight: 700;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-right: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.rounded-1 {
+  border-radius: 1em !important;
+}
+
+.rounded-2 {
+  border-radius: 2em !important;
+}
+
+.borderless {
+  border: none;
+}
+
+.text-main-ensure {
+  color: #005493 !important;
+}
+
 .navbar {
   border-top: 1px solid #ffe600;
 }
@@ -18,6 +47,7 @@ body {
 .navbar #navbar-icon {
   font-size: 32px;
   color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar-content {
@@ -53,6 +83,10 @@ body {
   padding: 0.3em;
   border-radius: 8px;
   color: #ebd3a6;
+}
+.navbar-content ul > li .arrow-down {
+  transform: rotate(-180deg);
+  transition: all 0.4s ease;
 }
 .navbar-content ul > li i {
   margin-right: 0.4em;
@@ -108,6 +142,11 @@ body {
 }
 .navbar-content .product-card .button-group .btn-cart:hover {
   background-color: #fff;
+  color: #005493;
+}
+
+.page-main-title h3 {
+  font-weight: bolder;
   color: #005493;
 }
 
@@ -256,14 +295,14 @@ body {
 
 .product-ensure .product-card {
   border-radius: 8px;
-  min-height: 200px;
+  min-height: 100px;
   border: 1px solid #f0f0f0;
   padding: 1em;
   margin-bottom: 1em;
 }
 .product-ensure .img-wrapper {
   border-radius: 8px;
-  min-height: 200px;
+  min-height: 100px;
   border: 1px solid #f0f0f0;
 }
 .product-ensure .img-wrapper img {
@@ -429,6 +468,22 @@ body {
   color: #0080f8;
 }
 
+.nav-bottom-prod-details {
+  background: #f5f5f5;
+  min-height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 0.4em;
+}
+.nav-bottom-prod-details .btn-nav-bottom {
+  width: 100%;
+  border-radius: 2em;
+}
+
 #product-page .card-age {
   padding: 1em;
   border-radius: 1em;
@@ -491,6 +546,108 @@ body {
 }
 #product-details .image-preview-column .active {
   border-color: #005493;
+}
+#product-details .card-feature {
+  border: 1px solid #e4f7ff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 1em;
+  white-space: nowrap;
+}
+#product-details .feature > .card-feature {
+  margin-right: 10px;
+}
+#product-details .formula-ensure {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  border-radius: 1em;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+#product-details .formula-ensure::-webkit-scrollbar {
+  display: none;
+}
+#product-details .formula-ensure .card-formula {
+  display: flex;
+  align-items: center;
+  background-color: #eef5fa;
+  border-radius: 0.9em;
+  padding: 1em;
+  margin-bottom: 10px;
+}
+#product-details .formula-ensure .card-formula p {
+  margin-bottom: 0;
+}
+#product-details .how-to .banner-card {
+  margin-top: 20px;
+  border-radius: 1em;
+  padding: 1em;
+  color: #fff !important;
+}
+#product-details .how-to .banner-card h6 {
+  margin-bottom: 0;
+}
+#product-details .feature-product .product-card {
+  border-radius: 8px;
+  min-height: 150px;
+  border: 1px solid #f0f0f0;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+#product-details .feature-product .img-wrapper {
+  border-radius: 8px;
+  min-height: 100px;
+  border: 1px solid #f0f0f0;
+}
+#product-details .feature-product .img-wrapper img {
+  width: 100%;
+}
+#product-details .feature-product .prod-label {
+  padding: 8px;
+  color: #6e5422;
+  background: #fbf6ed;
+  font-weight: 700;
+  border-radius: 8px;
+}
+#product-details .feature-product .button-group {
+  display: flex;
+}
+#product-details .feature-product .button-group .btn-detail-prod {
+  color: #fff;
+  padding: 8px 24px;
+  background: #0078d1;
+  border-radius: 100px;
+  width: 150px;
+  font-weight: 700;
+}
+#product-details .feature-product .button-group .btn-detail-prod:hover {
+  background-color: #04294b;
+  transition: all 0.4s ease;
+}
+#product-details .feature-product .button-group .btn-cart {
+  color: #0080f8;
+  border: 1px solid #0080f8;
+  border-radius: 100%;
+  padding: 8px 14px;
+}
+#product-details .feature-product .button-group .btn-cart:hover {
+  background-color: #0080f8;
+  transition: all 0.4s ease;
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+
+#shopping-page .store-card {
+  min-height: 200px;
+  border: 1px solid #e4f7ff;
+  padding: 1em;
 }
 
 .register-section {
